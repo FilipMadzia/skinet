@@ -5,12 +5,13 @@
     filled-container-shape: 6px,
     outlined-container-shape: 6px
   ));
-}
-
-:root {
   @include mat.badge-overrides((
     background-color: blue
   ));
+}
+
+.match-input-height {
+  height: var(--mat-form-field-container-height) !important;
 }
 
 html {
