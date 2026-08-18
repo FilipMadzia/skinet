@@ -10,3 +10,7 @@
     width: 32px;
     height: 32px;
 }
+
+.active {
+    color: blue;
+}
