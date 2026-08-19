@@ -14,6 +14,22 @@
   height: var(--mat-form-field-container-height) !important;
 }
 
+.snack-error {
+  @include mat.snack-bar-overrides((
+    button-color: white,
+    container-color: red,
+    supporting-text-color: white
+  ));
+}
+
+.snack-success {
+  @include mat.snack-bar-overrides((
+    button-color: white,
+    container-color: green,
+    supporting-text-color: white
+  ));
+}
+
 html {
   height: 100%;
   @include mat.theme(
@@ -29,19 +45,10 @@ html {
 }
 
 body {
-  // Default the application to a light color theme. This can be changed to
-  // `dark` to enable the dark color theme, or to `light dark` to defer to the
-  // user's system settings.
   color-scheme: light;
-
-  // Set a default background, font and text colors for the application using
-  // Angular Material's system-level CSS variables. Learn more about these
-  // variables at https://material.angular.dev/guide/system-variables
   background-color: var(--mat-sys-surface);
   color: var(--mat-sys-on-surface);
   font: var(--mat-sys-body-medium);
-
-  // Reset the user agent margin.
   margin: 0;
   height: 100%;
 }
